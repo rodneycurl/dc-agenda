@@ -1,0 +1,12 @@
+h1 {
+  font-family: helvetica;
+  font-size: 300px;
+  margin: auto 0;
+}
+
+p {
+  font-family: helvetica;
+  font-size: 12px;
+  margin-left: 20px;
+  color: 202020;
+}
