@@ -69,3 +69,345 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 5540ms (Views: 5526.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-28 18:02:12 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 404ms (Views: 388.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEvents (20171228231107)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_time" datetime, "address" varchar, "price" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171228231107"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-28 23:12:19.454038"], ["updated_at", "2017-12-28 23:12:19.454038"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from require at /Users/gcurl/Apps/dc-agenda/bin/rails:9)
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEvents (20171228231107)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_time" datetime, "address" varchar, "price" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171228231107"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-28 23:27:21.775230"], ["updated_at", "2017-12-28 23:27:21.775230"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Lori Kunze"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-1.com"], ["created_at", "2017-12-28 23:28:02.179404"], ["updated_at", "2017-12-28 23:28:02.179404"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ms. Dean Feeney"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-2.com"], ["created_at", "2017-12-28 23:28:02.187808"], ["updated_at", "2017-12-28 23:28:02.187808"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Susana Gleason"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-3.com"], ["created_at", "2017-12-28 23:28:02.192597"], ["updated_at", "2017-12-28 23:28:02.192597"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Olin Heller"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-4.com"], ["created_at", "2017-12-28 23:28:02.200686"], ["updated_at", "2017-12-28 23:28:02.200686"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Maeve Runolfsson"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-5.com"], ["created_at", "2017-12-28 23:28:02.205253"], ["updated_at", "2017-12-28 23:28:02.205253"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Mia Dooley IV"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-6.com"], ["created_at", "2017-12-28 23:28:02.210971"], ["updated_at", "2017-12-28 23:28:02.210971"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Eda Boyle"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-7.com"], ["created_at", "2017-12-28 23:28:02.214887"], ["updated_at", "2017-12-28 23:28:02.214887"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Emile Blick"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-8.com"], ["created_at", "2017-12-28 23:28:02.219465"], ["updated_at", "2017-12-28 23:28:02.219465"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ms. Edison Bruen"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-9.com"], ["created_at", "2017-12-28 23:28:02.224654"], ["updated_at", "2017-12-28 23:28:02.224654"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dr. Willow Will"], ["description", "Best Event Ever"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-10.com"], ["created_at", "2017-12-28 23:28:02.231297"], ["updated_at", "2017-12-28 23:28:02.231297"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Load (3.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Aida Bradtke"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-1.com"], ["created_at", "2017-12-28 23:31:22.645822"], ["updated_at", "2017-12-28 23:31:22.645822"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Miss Audra Waters"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-2.com"], ["created_at", "2017-12-28 23:31:22.652563"], ["updated_at", "2017-12-28 23:31:22.652563"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Flo Bartell II"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-3.com"], ["created_at", "2017-12-28 23:31:22.656053"], ["updated_at", "2017-12-28 23:31:22.656053"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Jonathon Adams"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-4.com"], ["created_at", "2017-12-28 23:31:22.660791"], ["updated_at", "2017-12-28 23:31:22.660791"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Keenan Kris"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-5.com"], ["created_at", "2017-12-28 23:31:22.667442"], ["updated_at", "2017-12-28 23:31:22.667442"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Miss Wilbert Dibbert"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-6.com"], ["created_at", "2017-12-28 23:31:22.674579"], ["updated_at", "2017-12-28 23:31:22.674579"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Candelario Huels Sr."], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-7.com"], ["created_at", "2017-12-28 23:31:22.678365"], ["updated_at", "2017-12-28 23:31:22.678365"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Lawrence Quigley"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-8.com"], ["created_at", "2017-12-28 23:31:22.681916"], ["updated_at", "2017-12-28 23:31:22.681916"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Iliana Kassulke"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-9.com"], ["created_at", "2017-12-28 23:31:22.686053"], ["updated_at", "2017-12-28 23:31:22.686053"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Warren Moore"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-10.com"], ["created_at", "2017-12-28 23:31:22.692128"], ["updated_at", "2017-12-28 23:31:22.692128"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Zola Kunde"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-1.com"], ["created_at", "2017-12-28 23:32:56.178419"], ["updated_at", "2017-12-28 23:32:56.178419"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "D'angelo Hudson"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-2.com"], ["created_at", "2017-12-28 23:32:56.190625"], ["updated_at", "2017-12-28 23:32:56.190625"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Jaquan Fisher"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-3.com"], ["created_at", "2017-12-28 23:32:56.205634"], ["updated_at", "2017-12-28 23:32:56.205634"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.2ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Theodora Rosenbaum"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-4.com"], ["created_at", "2017-12-28 23:32:56.240677"], ["updated_at", "2017-12-28 23:32:56.240677"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ms. Emilio Kerluke"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-5.com"], ["created_at", "2017-12-28 23:32:56.259530"], ["updated_at", "2017-12-28 23:32:56.259530"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Wendy Shanahan"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-6.com"], ["created_at", "2017-12-28 23:32:56.288864"], ["updated_at", "2017-12-28 23:32:56.288864"]]
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (14.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Mr. Imelda Christiansen"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-7.com"], ["created_at", "2017-12-28 23:32:56.318447"], ["updated_at", "2017-12-28 23:32:56.318447"]]
+  [1m[35m (14.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Carmine Kemmer"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-8.com"], ["created_at", "2017-12-28 23:32:56.368878"], ["updated_at", "2017-12-28 23:32:56.368878"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Alejandra Hills"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-9.com"], ["created_at", "2017-12-28 23:32:56.434069"], ["updated_at", "2017-12-28 23:32:56.434069"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (26.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Nikko Howell"], ["description", "Best Event Ever"], ["date_time", "2009-09-14 08:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-10.com"], ["created_at", "2017-12-28 23:32:56.459302"], ["updated_at", "2017-12-28 23:32:56.459302"]]
+  [1m[35m (14.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEvents (20171228231107)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_time" datetime, "address" varchar, "price" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171228231107"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-28 23:34:46.769547"], ["updated_at", "2017-12-28 23:34:46.769547"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dejuan Green"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-1.com"], ["created_at", "2017-12-28 23:34:56.884326"], ["updated_at", "2017-12-28 23:34:56.884326"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Kyla Hahn"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-2.com"], ["created_at", "2017-12-28 23:34:56.905460"], ["updated_at", "2017-12-28 23:34:56.905460"]]
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Buck Hyatt"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-3.com"], ["created_at", "2017-12-28 23:34:56.955995"], ["updated_at", "2017-12-28 23:34:56.955995"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Araceli Mitchell"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-4.com"], ["created_at", "2017-12-28 23:34:56.974971"], ["updated_at", "2017-12-28 23:34:56.974971"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Golden Stokes"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-5.com"], ["created_at", "2017-12-28 23:34:56.987349"], ["updated_at", "2017-12-28 23:34:56.987349"]]
+  [1m[35m (33.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Stanford Luettgen"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-6.com"], ["created_at", "2017-12-28 23:34:57.030732"], ["updated_at", "2017-12-28 23:34:57.030732"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Annie Crona"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-7.com"], ["created_at", "2017-12-28 23:34:57.042638"], ["updated_at", "2017-12-28 23:34:57.042638"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Herminia Padberg"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-8.com"], ["created_at", "2017-12-28 23:34:57.051184"], ["updated_at", "2017-12-28 23:34:57.051184"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Mrs. Jeffry Thompson"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-9.com"], ["created_at", "2017-12-28 23:34:57.058045"], ["updated_at", "2017-12-28 23:34:57.058045"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Royce Brekke"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-10.com"], ["created_at", "2017-12-28 23:34:57.070054"], ["updated_at", "2017-12-28 23:34:57.070054"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (11.2ms)[0m  [1m[35mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_time" datetime, "address" varchar, "price" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (4.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171228231107)[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-28 23:35:27.726347"], ["updated_at", "2017-12-28 23:35:27.726347"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_time" datetime, "address" varchar, "price" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (5.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171228231107)[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (2.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (10.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-28 23:35:27.807757"], ["updated_at", "2017-12-28 23:35:27.807757"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Melissa Gerhold"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-1.com"], ["created_at", "2017-12-28 23:35:28.987025"], ["updated_at", "2017-12-28 23:35:28.987025"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Herminio Treutel"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-2.com"], ["created_at", "2017-12-28 23:35:29.005456"], ["updated_at", "2017-12-28 23:35:29.005456"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dr. Glen Baumbach"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-3.com"], ["created_at", "2017-12-28 23:35:29.052794"], ["updated_at", "2017-12-28 23:35:29.052794"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "America Pfannerstill"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-4.com"], ["created_at", "2017-12-28 23:35:29.066220"], ["updated_at", "2017-12-28 23:35:29.066220"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dr. Bianka Lind"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-5.com"], ["created_at", "2017-12-28 23:35:29.077181"], ["updated_at", "2017-12-28 23:35:29.077181"]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Lupe Kuvalis DVM"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-6.com"], ["created_at", "2017-12-28 23:35:29.091423"], ["updated_at", "2017-12-28 23:35:29.091423"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (7.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Rhett Steuber"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-7.com"], ["created_at", "2017-12-28 23:35:29.099476"], ["updated_at", "2017-12-28 23:35:29.099476"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Margaretta Denesik"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-8.com"], ["created_at", "2017-12-28 23:35:29.116302"], ["updated_at", "2017-12-28 23:35:29.116302"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Derrick Daniel"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-9.com"], ["created_at", "2017-12-28 23:35:29.125754"], ["updated_at", "2017-12-28 23:35:29.125754"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Linnea Hayes PhD"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-10.com"], ["created_at", "2017-12-28 23:35:29.139462"], ["updated_at", "2017-12-28 23:35:29.139462"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Franz Bergstrom"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-1.com"], ["created_at", "2017-12-28 23:35:58.510339"], ["updated_at", "2017-12-28 23:35:58.510339"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Dianna McKenzie I"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-2.com"], ["created_at", "2017-12-28 23:35:58.528116"], ["updated_at", "2017-12-28 23:35:58.528116"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Aiden Davis"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-3.com"], ["created_at", "2017-12-28 23:35:58.555927"], ["updated_at", "2017-12-28 23:35:58.555927"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Twila Sporer"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-4.com"], ["created_at", "2017-12-28 23:35:58.562303"], ["updated_at", "2017-12-28 23:35:58.562303"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Rhianna Kertzmann"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-5.com"], ["created_at", "2017-12-28 23:35:58.577182"], ["updated_at", "2017-12-28 23:35:58.577182"]]
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Antonina Sipes"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-6.com"], ["created_at", "2017-12-28 23:35:58.594714"], ["updated_at", "2017-12-28 23:35:58.594714"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Emie Powlowski"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-7.com"], ["created_at", "2017-12-28 23:35:58.606548"], ["updated_at", "2017-12-28 23:35:58.606548"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ms. Granville Kautzer"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-8.com"], ["created_at", "2017-12-28 23:35:58.615968"], ["updated_at", "2017-12-28 23:35:58.615968"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ms. Kiley McKenzie"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-9.com"], ["created_at", "2017-12-28 23:35:58.624225"], ["updated_at", "2017-12-28 23:35:58.624225"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Chelsey Abernathy"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-10.com"], ["created_at", "2017-12-28 23:35:58.639498"], ["updated_at", "2017-12-28 23:35:58.639498"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_time" datetime, "address" varchar, "price" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (15.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (9.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171228231107)[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-28 23:36:42.679701"], ["updated_at", "2017-12-28 23:36:42.679701"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "date_time" datetime, "address" varchar, "price" integer, "website" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (5.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171228231107)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-28 23:36:42.732461"], ["updated_at", "2017-12-28 23:36:42.732461"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Owen Cassin"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-1.com"], ["created_at", "2017-12-28 23:36:43.840432"], ["updated_at", "2017-12-28 23:36:43.840432"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Stephan Conn"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-2.com"], ["created_at", "2017-12-28 23:36:43.848404"], ["updated_at", "2017-12-28 23:36:43.848404"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Miss Rosalyn Powlowski"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-3.com"], ["created_at", "2017-12-28 23:36:43.857489"], ["updated_at", "2017-12-28 23:36:43.857489"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ricky Mayert"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-4.com"], ["created_at", "2017-12-28 23:36:43.866329"], ["updated_at", "2017-12-28 23:36:43.866329"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "May Walter MD"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-5.com"], ["created_at", "2017-12-28 23:36:43.876020"], ["updated_at", "2017-12-28 23:36:43.876020"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Laisha Schmidt"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-6.com"], ["created_at", "2017-12-28 23:36:43.887021"], ["updated_at", "2017-12-28 23:36:43.887021"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Sanford Boyer"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-7.com"], ["created_at", "2017-12-28 23:36:43.895968"], ["updated_at", "2017-12-28 23:36:43.895968"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Miracle Dickinson Jr."], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-8.com"], ["created_at", "2017-12-28 23:36:43.904755"], ["updated_at", "2017-12-28 23:36:43.904755"]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Izaiah Gusikowski"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-9.com"], ["created_at", "2017-12-28 23:36:43.915650"], ["updated_at", "2017-12-28 23:36:43.915650"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Joanny Weimann"], ["description", "Best Event Ever"], ["date_time", "2018-01-01 19:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 5], ["website", "example-10.com"], ["created_at", "2017-12-28 23:36:43.923525"], ["updated_at", "2017-12-28 23:36:43.923525"]]
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m

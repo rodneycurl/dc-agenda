@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  date_time: 2017-12-28 18:11:07
+  address: MyString
+  price: 1
+  website: MyString
+
+two:
+  title: MyString
+  description: MyString
+  date_time: 2017-12-28 18:11:07
+  address: MyString
+  price: 1
+  website: MyString
