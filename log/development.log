@@ -1364,3 +1364,35 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 60ms (Views: 55.4ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-01-01 12:45:41 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 115ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-01 12:45:59 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 69ms (Views: 62.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-01 12:46:48 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 64ms (Views: 56.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2018-01-01 12:46:50 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered events/_form.html.erb (7.5ms)
+  Rendered events/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+

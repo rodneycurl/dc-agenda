@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps to get started:
 
-Things you may want to cover:
+* Install the correct Ruby version
 
-* Ruby version
+* "Bundle Install" to install the System dependencies
 
-* System dependencies
+* Run "rails db:migrate" for Database creation
 
-* Configuration
+* Run "rails db:seed" forDatabase initialization
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Start the server with "rails s"
