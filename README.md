@@ -8,6 +8,6 @@ Steps to get started:
 
 * Run "rails db:migrate" for Database creation
 
-* Run "rails db:seed" forDatabase initialization
+* Run "rails db:seed" for Database initialization
 
-* Start the server with "rails s"
+* Run "rails s" to start the server locally
