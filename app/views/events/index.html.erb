@@ -3,6 +3,9 @@
 <ul class="events">
   <% @events.each do |event| %>
     <li>
+      <% if event.photo.present? %>
+        <%= image_tag event.photo.url(:thumb) %>
+      <% end %>
       <%= event.title %>
       <%= event.description %>
       <%= event.date_time %>

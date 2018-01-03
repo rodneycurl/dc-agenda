@@ -1396,3 +1396,341 @@ Processing by EventsController#new as HTML
 Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentPhotoToEvents (20180103004336)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentPhotoToEvents < ActiveRecord::Migration[4.2] (called from require at /Users/gcurl/Apps/dc-agenda/bin/rails:9)
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "events" ADD "photo_file_name" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "events" ADD "photo_content_type" varchar[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "events" ADD "photo_file_size" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "events" ADD "photo_updated_at" datetime[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180103004336"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/events/new" for 127.0.0.1 at 2018-01-02 19:56:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (7.9ms)
+  Rendered events/new.html.erb within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"events"} missing required keys: [:id]):
+    1: <%= form_for @event, url: event_path, html: { multipart: true } do |f| %>
+    2:   <%= render 'shared/error_messages' %>
+    3: 
+    4:   <%= f.label :title %>
+  
+app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb___1883285540209213801_70366492809480'
+app/views/events/new.html.erb:4:in `_app_views_events_new_html_erb__94604988361258457_70366485293320'
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (135.3ms)
+Started GET "/events/new" for 127.0.0.1 at 2018-01-02 20:06:33 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered events/_form.html.erb (761.1ms)
+  Rendered events/new.html.erb within layouts/application (763.5ms)
+Completed 500 Internal Server Error in 796ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007ffef3dc06f0>:0x007ffeeedd8250>
+Did you mean?  format
+               formats
+               formats=
+               form_for
+               form_tag
+               fork):
+    16:   <%= f.label :price %>
+    17:   <%= f.text_field :price, class: 'form-control' %>
+    18: 
+    19:   <%= form.file_field :avatar %>
+    20: 
+    21:   <%= f.label :website %>
+    22:   <%= f.text_field :website, class: 'form-control' %>
+  
+app/views/events/_form.html.erb:19:in `block in _app_views_events__form_html_erb___1883285540209213801_70366487432520'
+app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb___1883285540209213801_70366487432520'
+app/views/events/new.html.erb:4:in `_app_views_events_new_html_erb__94604988361258457_70366494853060'
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (132.8ms)
+Started GET "/events/new" for 127.0.0.1 at 2018-01-02 20:07:53 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered events/_form.html.erb (12.0ms)
+  Rendered events/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 688ms (Views: 685.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2018-01-02 20:08:10 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered events/_form.html.erb (4.5ms)
+  Rendered events/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 56ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2018-01-02 20:09:31 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CeUx3fRnc9UPy/dRX9vQAAQXmzMnS4RRXLrVFbN/bCq7MkGpf2mWDa4ea0JfVmb77cuwj50mXOCcXLWU8iwJ7A==", "event"=>{"title"=>"New Test", "description"=>"New Test", "date_time"=>"2018-01-04T11:00", "address"=>"1600 Pennsylvania Avenue, Washington, DC", "price"=>"2", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007ffeef8860a8 @tempfile=#<Tempfile:/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/RackMultipart20180102-97109-tef9cp.jpg>, @original_filename="R32.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[photo]\"; filename=\"R32.jpg\"\r\nContent-Type: image/jpeg\r\n">, "website"=>"www.event.com"}, "commit"=>"Submit"}
+Command :: file -b --mime '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/1b5c31a494189e0415d5623f8b92a41920180102-97109-1oxivv6.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/1b5c31a494189e0415d5623f8b92a41920180102-97109-j7jgfx.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/1b5c31a494189e0415d5623f8b92a41920180102-97109-j7jgfx.jpg[0]'
+Command :: convert '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/1b5c31a494189e0415d5623f8b92a41920180102-97109-j7jgfx.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/9657cc535f28fad8e61d14bf2332748320180102-97109-7fc515'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/1b5c31a494189e0415d5623f8b92a41920180102-97109-j7jgfx.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/1b5c31a494189e0415d5623f8b92a41920180102-97109-j7jgfx.jpg[0]'
+Command :: convert '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/1b5c31a494189e0415d5623f8b92a41920180102-97109-j7jgfx.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/9657cc535f28fad8e61d14bf2332748320180102-97109-19oyfyo'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime '/var/folders/cw/62vqgs5d0qg1xqvg9yjdr2rh0000gn/T/1b5c31a494189e0415d5623f8b92a41920180102-97109-1xx7cfr.jpg'
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "description", "date_time", "address", "price", "website", "created_at", "updated_at", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "New Test"], ["description", "New Test"], ["date_time", "2018-01-04 11:00:00"], ["address", "1600 Pennsylvania Avenue, Washington, DC"], ["price", 2], ["website", "www.event.com"], ["created_at", "2018-01-03 01:09:31.945493"], ["updated_at", "2018-01-03 01:09:31.945493"], ["photo_file_name", "R32.jpg"], ["photo_content_type", "image/jpeg"], ["photo_file_size", 1370433], ["photo_updated_at", "2018-01-03 01:09:31.240931"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/events/14
+Completed 302 Found in 747ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/events/14" for 127.0.0.1 at 2018-01-02 20:09:31 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 118ms (Views: 108.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/14" for 127.0.0.1 at 2018-01-02 20:09:45 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2018-01-02 20:09:49 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 59ms (Views: 55.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2018-01-02 20:09:59 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `photo' for nil:NilClass):
+    3: <ul class="events">
+    4:   <% @events.each do |event| %>
+    5:     <li>
+    6:       <%= image_tag @event.photo.url(:thumb) %>
+    7:       <%= event.title %>
+    8:       <%= event.description %>
+    9:       <%= event.date_time %>
+  
+app/views/events/index.html.erb:6:in `block in _app_views_events_index_html_erb__2836507770782274967_70366507571680'
+app/views/events/index.html.erb:4:in `_app_views_events_index_html_erb__2836507770782274967_70366507571680'
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (108.0ms)
+Started GET "/events" for 127.0.0.1 at 2018-01-02 20:10:05 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 54ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/thumb/missing.png" for 127.0.0.1 at 2018-01-02 20:10:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/photos/thumb/missing.png"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (10.2ms)
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (216.1ms)
+Started GET "/events" for 127.0.0.1 at 2018-01-02 20:10:42 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2018-01-02 20:10:58 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2018-01-02 20:11:01 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/14" for 127.0.0.1 at 2018-01-02 20:11:11 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (232.3ms)
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `event' for #<#<Class:0x007ffef3dc06f0>:0x007ffef777cb78>
+Did you mean?  @event):
+    1: <% if event.photo.present? %>
+    2:   <%= image_tag @event.photo.url(:thumb) %>
+    3: <% end %>
+    4: <%= @event.title %>
+  
+app/views/events/show.html.erb:1:in `_app_views_events_show_html_erb___4486248373600771840_70366525123240'
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.6ms)
+  Rendering /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/gcurl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (114.3ms)
+Started GET "/events/14" for 127.0.0.1 at 2018-01-02 20:11:19 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2018-01-02 20:11:20 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 67ms (Views: 64.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/4" for 127.0.0.1 at 2018-01-02 20:11:21 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 70ms (Views: 66.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/events/14" for 127.0.0.1 at 2018-01-02 20:11:56 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 123ms (Views: 118.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events/14/edit" for 127.0.0.1 at 2018-01-02 20:11:59 -0500
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered events/_form.html.erb (6.7ms)
+  Rendered events/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/events/14" for 127.0.0.1 at 2018-01-02 20:12:55 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 74ms (Views: 69.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/events/14/edit" for 127.0.0.1 at 2018-01-02 20:12:57 -0500
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered events/_form.html.erb (29.4ms)
+  Rendered events/edit.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 103ms (Views: 99.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2018-01-02 20:13:03 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 87ms (Views: 83.9ms | ActiveRecord: 0.3ms)
+
+

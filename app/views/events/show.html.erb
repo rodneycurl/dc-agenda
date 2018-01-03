@@ -1,3 +1,6 @@
+<% if @event.photo.present? %>
+  <%= image_tag @event.photo.url(:thumb) %>
+<% end %>
 <%= @event.title %>
 <%= @event.description %>
 <%= @event.date_time %>
@@ -5,3 +8,4 @@
 <%= @event.price %>
 <%= @event.website %>
 <%= link_to "Events List", events_path %>
+<%= link_to "Edit Event", edit_event_path(@event) %>
