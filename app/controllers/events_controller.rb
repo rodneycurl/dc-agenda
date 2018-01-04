@@ -22,7 +22,7 @@ class EventsController < ApplicationController
   end
 
   def update
-    @event = User.find(params[:id])
+    @event = EventP.find(params[:id])
     if @event.update_attributes(event_params)
       # Handle a successful update.
     else
@@ -31,7 +31,12 @@ class EventsController < ApplicationController
   end
 
   def index
-    @events = Event.all
+    # @events = Event.all
+    @events = Event.where(nil) # creates an anonymous scope
+    #Todo setup default filter for today's date
+    @events = @events.date(params[:date]) if params[:date].present?
+    Rails.logger.debug @events
+
   end
 
   private

@@ -1,5 +1,16 @@
 <h1>All events</h1>
 
+<div id="filter">
+  <%= link_to "All Events", events_path %><p></p>
+
+  <%= link_to "Today", events_path(:date => Time.now.to_date ) %>
+  <p><%= Time.now.to_date %></p>
+
+  <%= link_to "Tommorow", events_path(:date => (Time.now.to_date+1) ) %>
+  <p><%= Time.now.to_date+1 %></p>
+</div>
+
+
 <ul class="events">
   <% @events.each do |event| %>
     <li>
